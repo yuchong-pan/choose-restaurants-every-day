@@ -13,12 +13,17 @@ if __name__ == "__main__":
             tags[t].add(json.dumps(r))
     print "available tags:"
     print ", ".join(tags_ls)
-    ts = raw_input("? ").strip().split(",")
+    ts = map(lambda x: x.strip(), raw_input("? ").strip().split(","))
     draw = set()
     ts = tags_ls if len(ts) == 0 else ts
     for t in ts:
-        for r in tags[t]:
-            draw.add(r)
+        if t[0] != "!":
+            for r in tags[t]:
+                draw.add(r)
+    for t in ts:
+        if t[0] == "!":
+            for r in tags[t[1:]]:
+                draw.remove(r)
     ls = []
     for r in draw:
         ls.append(r)
