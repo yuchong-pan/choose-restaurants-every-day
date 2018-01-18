@@ -1,0 +1,13 @@
+[{
+    "name": "Nori",
+    "tags": ["on-campus", "japanese"]
+}, {
+    "name": "Bento Sushi",
+    "tags": ["on-campus", "japanese"]
+}, {
+    "name": "Suga",
+    "tags": ["off-campus", "japanese", "korean"]
+}, {
+    "name": "Running Chicken",
+    "tags": ["off-campus", "village", "korean"]
+}]
