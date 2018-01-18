@@ -10,4 +10,19 @@
 }, {
     "name": "Running Chicken",
     "tags": ["off-campus", "village", "korean"]
+}, {
+    "name": "McDonald",
+    "tags": ["off-campus", "village", "fast-food"]
+}, {
+    "name": "A&W",
+    "tags": ["off-campus", "village", "fast-food"]
+}, {
+    "name": "Place Vanier Dining Hall",
+    "tags": ["on-campus", "residence"]
+}, {
+    "name": "Totem Park Dining Hall",
+    "tags": ["on-campus", "residence"]
+}, {
+    "name": "Open Kitchen",
+    "tags": ["on-campus", "residence"]
 }]
