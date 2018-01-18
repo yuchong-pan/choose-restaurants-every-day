@@ -2,7 +2,7 @@ import json
 import random
 
 if __name__ == "__main__":
-    restaurants = json.loads(open("restaurants.txt", "r").read())
+    restaurants = json.loads(open("restaurants.json", "r").read())
     tags = dict()
     tags_ls = []
     for r in restaurants:
