@@ -25,4 +25,10 @@
 }, {
     "name": "Open Kitchen",
     "tags": ["on-campus", "residence"]
+}, {
+    "name": "破店",
+    "tags": ["off-campus", "chinese", "w-broadway"]
+}, {
+    "name": "Mukja",
+    "tags": ["off-campus", "korean", "w-broadway"]
 }]
