@@ -15,14 +15,15 @@ if __name__ == "__main__":
     print ", ".join(tags_ls)
     ts = map(lambda x: x.strip(), raw_input("? ").strip().split(","))
     draw = set()
+    ts_rm = filter(lambda x: x[0] == "!", ts)
+    ts = filter(lambda x: x[0] != "!", ts)
     ts = tags_ls if len(ts) == 0 else ts
     for t in ts:
-        if t[0] != "!":
-            for r in tags[t]:
-                draw.add(r)
-    for t in ts:
-        if t[0] == "!":
-            for r in tags[t[1:]]:
+        for r in tags[t]:
+            draw.add(r)
+    for t in ts_rm:
+        for r in tags[t[1:]]:
+            if r in draw:
                 draw.remove(r)
     ls = []
     for r in draw:
